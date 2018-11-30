@@ -127,13 +127,17 @@
                 section.appendChild(nameHeading);
                 section.appendChild(document.createElement("br"));
                 
+                let position = document.createTextNode(array[i][2]);
+//              org.className += "positionStyle";
+                section.appendChild(position);
+                section.appendChild(document.createElement("br"));
+
+                
                 let org = document.createTextNode(array[i][1]);
 //                org.className += "orgStyle";
                 section.appendChild(org);
                 
-                let position = document.createTextNode(array[i][2]);
-//              org.className += "positionStyle";
-                section.appendChild(position);
+
                 
 //              section.setAttribute('data-background-image', 'jpeg');
                 
