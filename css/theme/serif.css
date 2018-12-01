@@ -272,8 +272,9 @@ body {
 
 .reveal .img {
     float: left;
+    width:100%;
+    max-width:200px;
 }
-
 
 
 /*********************************************
