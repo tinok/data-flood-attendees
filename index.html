@@ -103,7 +103,6 @@
                 let title = document.createElement("h2");
                 title.textContent += "Meet our participants..."
                 section.appendChild(title);;
-//                section.appendChild(document.createElement("br"));
                 
                 if (array[i][4] != "  ") {
                     let img = document.createElement('img'); 
@@ -118,24 +117,13 @@
                 nameHeading.className += "nameStyle";
                 nameHeading.textContent += array[i][0];
                 section.appendChild(nameHeading);
-//                section.appendChild(document.createElement("br"));
                 
                 if (array[i][1] != "  ") {
-//                    let position = document.createTextNode(array[i][1]);
-//                    position.className += "positionStyle";
-//                    section.appendChild(position);
-//                    section.appendChild(document.createElement("br"));
-                    
                     let position = document.createElement('h4');
                     position.className += "positionStyle";
                     position.textContent += array[i][1];
                     section.appendChild(position);
                 }
-                
-//                let org = document.createTextNode(array[i][2]);
-//                org.className += "orgStyle";
-//                section.appendChild(org);
-//                section.appendChild(document.createElement("br"));
                 
                 let org = document.createElement('h4');
                 org.className += "orgStyle";
@@ -157,8 +145,6 @@
                     twitter.className += "bio";
                     section.appendChild(twitter);
                 }
-                
-
                 
 //              section.setAttribute('data-background-image', 'jpeg');
                 
