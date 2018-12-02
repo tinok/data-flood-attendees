@@ -103,10 +103,9 @@
             var x = document.getElementById("content");
             for (let i = 0; i < array.length; i++) {
                 let section = document.createElement('section'); 
-                
                 let title = document.createElement("h2");
                 title.textContent += "Meet our participants..."
-                section.appendChild(title);
+                section.appendChild(title);   
                 
                 if (array[i][4] != "  ") {
                     let div = document.createElement("div");
@@ -120,7 +119,7 @@
                     
                     section.appendChild(div);
                 }
-                
+            
                 let div2 = document.createElement("div");
                 div2.className += "col-md-9";
                 
