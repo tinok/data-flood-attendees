@@ -100,7 +100,7 @@
             
             var x = document.getElementById("content");
             for (let i = 0; i < array.length; i++) {
-                let section = document.createElement('section');
+                let section = document.createElement('section');               
                 let title = document.createElement("h2");
                 title.textContent += "Meet our participants..."
                 section.appendChild(title);;
@@ -121,13 +121,11 @@
                 
                 if (array[i][1] != "  ") {
                     let position = document.createElement('h4');
-                    position.className += "positionStyle";
                     position.textContent += array[i][1];
                     section.appendChild(position);
                 }
                 
                 let org = document.createElement('h4');
-                org.className += "orgStyle";
                 org.textContent += array[i][2];
                 section.appendChild(org);
 
