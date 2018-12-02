@@ -101,6 +101,7 @@
             }); 
             
             var x = document.getElementById("content");
+            var withImage = false;
             for (let i = 0; i < array.length; i++) {
                 let section = document.createElement('section'); 
                 let title = document.createElement("h2");
@@ -118,10 +119,13 @@
                     div.appendChild(img);
                     
                     section.appendChild(div);
+                    withImage = true;
                 }
             
                 let div2 = document.createElement("div");
-                div2.className += "col-md-9";
+                if (withImage) {
+                    div2.className += "col-md-9";
+                }
                 
                 let nameHeading = document.createElement('h3')
                 nameHeading.className += "nameStyle";
@@ -166,6 +170,8 @@
                     div2.appendChild(twitter);
                     
                 }
+                
+                withImage = false;
                 
                 section.appendChild(div2);
                 
