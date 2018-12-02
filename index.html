@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/serif.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -139,11 +140,24 @@
                 }
                 
                 if (array[i][5] != "  ") {
+                    let img = document.createElement('img'); 
+                    img.src = '/images/twitter.png'
+                    img.className += "twitter";
+                    
+                    let imgContainer = document.createElement('span'); 
+                    imgContainer.appendChild(img);
+                    
+                    let textContainer = document.createElement('span'); 
+                    let twitterText = document.createTextNode('@' + array[i][5]);
+                    textContainer.appendChild(twitterText);
+                    
                     let twitter = document.createElement('p');
-                    let twitterText = document.createTextNode(array[i][5]);
-                    twitter.appendChild(twitterText);
                     twitter.className += "bio";
+                    twitter.appendChild(imgContainer);
+                    twitter.appendChild(twitterText);
+                    
                     section.appendChild(twitter);
+                    
                 }
                 
 //              section.setAttribute('data-background-image', 'jpeg');
