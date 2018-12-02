@@ -9,8 +9,6 @@
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/serif.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -102,49 +100,41 @@
             
             var x = document.getElementById("content");
             for (let i = 0; i < array.length; i++) {
-                let section = document.createElement('section'); 
-                
+                let section = document.createElement('section');               
                 let title = document.createElement("h2");
                 title.textContent += "Meet our participants..."
-                section.appendChild(title);
+                section.appendChild(title);;
                 
                 if (array[i][4] != "  ") {
-                    let div = document.createElement("div");
-                    div.className += "col-md-3";
-                    
                     let img = document.createElement('img'); 
                     let imgSrc = array[i][4];
                     img.src = imgSrc;
                     img.className += "img";
-                    div.appendChild(img);
-                    
-                    section.appendChild(div);
+                    section.appendChild(img);
                 }
-                
-                let div2 = document.createElement("div");
-                div2.className += "col-md-9";
+
                 
                 let nameHeading = document.createElement('h3')
                 nameHeading.className += "nameStyle";
                 nameHeading.textContent += array[i][0];
-                div2.appendChild(nameHeading);
+                section.appendChild(nameHeading);
                 
                 if (array[i][1] != "  ") {
                     let position = document.createElement('h4');
                     position.textContent += array[i][1];
-                    div2.appendChild(position);
+                    section.appendChild(position);
                 }
                 
                 let org = document.createElement('h4');
                 org.textContent += array[i][2];
-                div2.appendChild(org);
+                section.appendChild(org);
 
                 if (array[i][3] != "  ") {
                     let bio = document.createElement('p');
                     let bioText = document.createTextNode(array[i][3]);
                     bio.appendChild(bioText);
                     bio.className += "bio";
-                    div2.appendChild(bio);
+                    section.appendChild(bio);
                 }
                 
                 if (array[i][5] != "  ") {
@@ -164,11 +154,9 @@
                     twitter.appendChild(imgContainer);
                     twitter.appendChild(twitterText);
                     
-                    div2.appendChild(twitter);
+                    section.appendChild(twitter);
                     
                 }
-                
-                section.appendChild(div2);
                 
 //              section.setAttribute('data-background-image', 'jpeg');
                 
