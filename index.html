@@ -104,9 +104,7 @@
             var withImage = false;
             for (let i = 0; i < array.length; i++) {
                 let section = document.createElement('section'); 
-                let title = document.createElement("h2");
-                title.textContent += "Meet our participants..."
-                section.appendChild(title);   
+                   
                 
                 if (array[i][4] != "  ") {
                     let div = document.createElement("div");
@@ -126,6 +124,10 @@
                 if (withImage) {
                     div2.className += "col-md-9";
                 }
+                
+                let title = document.createElement("h2");
+                title.textContent += "Meet our participants..."
+                div2.appendChild(title);
                 
                 let nameHeading = document.createElement('h3')
                 nameHeading.className += "nameStyle";
