@@ -167,7 +167,6 @@
                     
                     let textContainer = document.createElement('span');
                     let twitterText = document.createTextNode(array[i][5]);
-                    console.log(twitterText);
                     if (array[i][5].charAt(1) !== "@") {
                         let str = array[i][5].replace(/\s+/g, '');;
                         twitterText = document.createTextNode('@' + str)
