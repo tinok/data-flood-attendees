@@ -241,8 +241,7 @@ text-align: left;}
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+ }
 
 .reveal section img.plain {
   border: 0;
@@ -303,3 +302,33 @@ text-align: left;}
 @media print {
   .backgrounds {
     background-color: #F0F1EB; } }
+
+
+
+/*Title overlays*/
+
+.header_title {
+    z-index: 100;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+
+.header_title h2 {
+    font-size: 24px!important;
+
+}
+.footer_title {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}    
+
+.reveal .playback {
+  display: none;
+}
+
+
+.reveal .controls {
+    display: none!important;
+}
